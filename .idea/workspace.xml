@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1d1badd9-95ae-435a-b42e-4b8a50da38f0" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Scala Worksheet" />
+        <option value="Scala Object" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="C:\Users\alberto.checa\IdeaProjects\SparkWorkingExample2\.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="21gOD0vAMiWi1JjaxXjgs2Ns9fF" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
+  </component>
+  <component name="RunManager" selected="Application.DataframeExample">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true">
+      <option name="INCLUDE_PROVIDED_SCOPE" value="true" />
+      <option name="MAIN_CLASS_NAME" value="org.example.App" />
+      <module name="SparkWorkingExample" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DataframeExample" type="Application" factoryName="Application" temporary="true">
+      <option name="INCLUDE_PROVIDED_SCOPE" value="true" />
+      <option name="MAIN_CLASS_NAME" value="org.example.DataframeExample" />
+      <module name="SparkWorkingExample2" />
+      <option name="PROGRAM_PARAMETERS" value="blogs.json" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MnMcount" type="Application" factoryName="Application">
+      <option name="INCLUDE_PROVIDED_SCOPE" value="true" />
+      <option name="MAIN_CLASS_NAME" value="org.example.MnMcount" />
+      <module name="SparkWorkingExample2" />
+      <option name="PROGRAM_PARAMETERS" value="mnm_dataset.csv" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RDDexample" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="INCLUDE_PROVIDED_SCOPE" value="true" />
+      <option name="MAIN_CLASS_NAME" value="org.example.RDDexample" />
+      <module name="SparkWorkingExample2" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.MnMcount" />
+      <item itemvalue="Application.RDDexample" />
+      <item itemvalue="Application.App" />
+      <item itemvalue="Application.DataframeExample" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.DataframeExample" />
+        <item itemvalue="Application.App" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1d1badd9-95ae-435a-b42e-4b8a50da38f0" name="Default Changelist" comment="" />
+      <created>1638359140756</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1638359140756</updated>
+      <workItem from="1638359144912" duration="2101000" />
+      <workItem from="1638361294668" duration="603000" />
+      <workItem from="1638434194143" duration="7141000" />
+      <workItem from="1638519133871" duration="2935000" />
+      <workItem from="1638866998078" duration="4284000" />
+      <workItem from="1638877872697" duration="1193000" />
+      <workItem from="1639040878686" duration="3780000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="361" y="71" key="#Notifications" timestamp="1638444445254">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="71" key="#Notifications/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1638444445254" />
+    <state x="499" y="167" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1639048907365">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="167" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1536.824@0.0.1536.824" timestamp="1639048907365" />
+    <state x="331" y="135" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1639057364075">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="2334" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1638448190822" />
+    <state x="331" y="135" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1639057364075" />
+    <state x="592" y="178" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1639056955815">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="2660" y="225" key="#com.intellij.ide.macro.MacrosDialog/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1638447601520" />
+    <state x="592" y="178" key="#com.intellij.ide.macro.MacrosDialog/0.0.1536.824@0.0.1536.824" timestamp="1639056955815" />
+    <state x="551" y="241" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1638868152369">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="2609" y="304" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1638447517798" />
+    <state x="551" y="241" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1536.824@0.0.1536.824" timestamp="1638868152369" />
+    <state width="1493" height="208" key="GridCell.Tab.0.bottom" timestamp="1639057874947">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="209" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1638446226783" />
+    <state width="1875" height="209" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1638448254103" />
+    <state width="1493" height="208" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1639057874947" />
+    <state width="1493" height="208" key="GridCell.Tab.0.center" timestamp="1639057874947">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="209" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1638446226783" />
+    <state width="1875" height="209" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1638448254102" />
+    <state width="1493" height="208" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1639057874947" />
+    <state width="1493" height="208" key="GridCell.Tab.0.left" timestamp="1639057874947">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="209" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1638446226783" />
+    <state width="1875" height="209" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1638448254102" />
+    <state width="1493" height="208" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1639057874947" />
+    <state width="1493" height="208" key="GridCell.Tab.0.right" timestamp="1639057874947">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="209" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1638446226783" />
+    <state width="1875" height="209" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1638448254102" />
+    <state width="1493" height="208" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1639057874947" />
+    <state x="369" y="110" key="SettingsEditor" timestamp="1638520040535">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="2381" y="162" key="SettingsEditor/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1638361230956" />
+    <state x="369" y="110" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1638520040535" />
+    <state x="525" y="273" key="com.intellij.ide.util.TipDialog" timestamp="1639040881261">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="2576" y="344" key="com.intellij.ide.util.TipDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1638434599954" />
+    <state x="525" y="273" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1639040881261" />
+    <state x="545" y="15" width="611" height="804" key="find.popup" timestamp="1638520051559">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="545" y="15" width="611" height="804" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1638520051559" />
+  </component>
+</project>
