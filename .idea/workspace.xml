@@ -1,7 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1d1badd9-95ae-435a-b42e-4b8a50da38f0" name="Default Changelist" comment="" />
+    <list default="true" id="1d1badd9-95ae-435a-b42e-4b8a50da38f0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/aeropuertos.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/App$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/App.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/DataframeExample$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/DataframeExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/MnMcount$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/MnMcount.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/RDDexample$$typecreator1$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/RDDexample$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/RDDexample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/samples/AppTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/samples/ExampleSpec.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/samples/ListSuite.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/samples/MySpecTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/samples/StackSuite.class" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,6 +34,7 @@
       <list>
         <option value="Scala Worksheet" />
         <option value="Scala Object" />
+        <option value="Package Object" />
       </list>
     </option>
   </component>
@@ -39,7 +59,9 @@
     <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="21gOD0vAMiWi1JjaxXjgs2Ns9fF" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -50,9 +72,26 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
-  <component name="RunManager" selected="Application.DataframeExample">
+  <component name="RunManager" selected="Application.Aeropuertos">
+    <configuration name="Aeropuertos" type="Application" factoryName="Application" temporary="true">
+      <option name="INCLUDE_PROVIDED_SCOPE" value="true" />
+      <option name="MAIN_CLASS_NAME" value="org.chapter4.Aeropuertos" />
+      <module name="SparkWorkingExample2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.chapter4.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="App" type="Application" factoryName="Application" temporary="true">
       <option name="INCLUDE_PROVIDED_SCOPE" value="true" />
       <option name="MAIN_CLASS_NAME" value="org.example.App" />
@@ -104,9 +143,11 @@
       <item itemvalue="Application.RDDexample" />
       <item itemvalue="Application.App" />
       <item itemvalue="Application.DataframeExample" />
+      <item itemvalue="Application.Aeropuertos" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Aeropuertos" />
         <item itemvalue="Application.DataframeExample" />
         <item itemvalue="Application.App" />
       </list>
@@ -128,7 +169,10 @@
       <workItem from="1638519133871" duration="2935000" />
       <workItem from="1638866998078" duration="4284000" />
       <workItem from="1638877872697" duration="1193000" />
-      <workItem from="1639040878686" duration="3780000" />
+      <workItem from="1639040878686" duration="3781000" />
+      <workItem from="1639126463860" duration="1193000" />
+      <workItem from="1639384566989" duration="5895000" />
+      <workItem from="1639470191025" duration="8500000" />
     </task>
     <servers />
   </component>
@@ -140,13 +184,18 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="71" key="#Notifications/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1638444445254" />
+    <state x="361" y="71" key="#Project_Structure" timestamp="1639472283725">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="71" key="#Project_Structure/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1639472283725" />
     <state x="499" y="167" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1639048907365">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="167" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1536.824@0.0.1536.824" timestamp="1639048907365" />
-    <state x="331" y="135" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1639057364075">
+    <state x="331" y="135" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1639474844693">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="331" y="135" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1639474844693" />
     <state x="2334" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1638448190822" />
     <state x="331" y="135" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1639057364075" />
     <state x="592" y="178" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1639056955815">
@@ -159,40 +208,40 @@
     </state>
     <state x="2609" y="304" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1638447517798" />
     <state x="551" y="241" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1536.824@0.0.1536.824" timestamp="1638868152369" />
-    <state width="1493" height="208" key="GridCell.Tab.0.bottom" timestamp="1639057874947">
+    <state width="1493" height="208" key="GridCell.Tab.0.bottom" timestamp="1639486966280">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="209" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1638446226783" />
+    <state width="1493" height="208" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1639486966280" />
     <state width="1875" height="209" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1638448254103" />
-    <state width="1493" height="208" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1639057874947" />
-    <state width="1493" height="208" key="GridCell.Tab.0.center" timestamp="1639057874947">
+    <state width="1493" height="208" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1639060432657" />
+    <state width="1493" height="208" key="GridCell.Tab.0.center" timestamp="1639486966280">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="209" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1638446226783" />
+    <state width="1493" height="208" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1639486966280" />
     <state width="1875" height="209" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1638448254102" />
-    <state width="1493" height="208" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1639057874947" />
-    <state width="1493" height="208" key="GridCell.Tab.0.left" timestamp="1639057874947">
+    <state width="1493" height="208" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1639060432657" />
+    <state width="1493" height="208" key="GridCell.Tab.0.left" timestamp="1639486966280">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="209" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1638446226783" />
+    <state width="1493" height="208" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1639486966280" />
     <state width="1875" height="209" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1638448254102" />
-    <state width="1493" height="208" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1639057874947" />
-    <state width="1493" height="208" key="GridCell.Tab.0.right" timestamp="1639057874947">
+    <state width="1493" height="208" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1639060432657" />
+    <state width="1493" height="208" key="GridCell.Tab.0.right" timestamp="1639486966280">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="209" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1638446226783" />
+    <state width="1493" height="208" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1639486966280" />
     <state width="1875" height="209" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1638448254102" />
-    <state width="1493" height="208" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1639057874947" />
+    <state width="1493" height="208" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1639060432657" />
     <state x="369" y="110" key="SettingsEditor" timestamp="1638520040535">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="2381" y="162" key="SettingsEditor/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1638361230956" />
     <state x="369" y="110" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1638520040535" />
-    <state x="525" y="273" key="com.intellij.ide.util.TipDialog" timestamp="1639040881261">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="2576" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1639470194661">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2576" y="344" key="com.intellij.ide.util.TipDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1638434599954" />
-    <state x="525" y="273" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1639040881261" />
+    <state x="2576" y="344" key="com.intellij.ide.util.TipDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1639470194661" />
+    <state x="525" y="273" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1639128548253" />
     <state x="545" y="15" width="611" height="804" key="find.popup" timestamp="1638520051559">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
