@@ -5,7 +5,7 @@ Ejercicios del libro Learning Spark **Lightning-Fast Data Analytics**
 En el paquete examples tengo los ejemplos del libro  modificados ligeramente 
 
 ####Chapter 1 :Introduction to Apache Spark
-El primer capitulo es más teorico y se centra en entender como funciona Spark
+El primer capitulo es más teorico y se centra en entender como funciona Spark 
 
 ####Chapter 2 :Getting started
 En este capitulo tenemos el primer ejercicio con los MnM en el que los contamos ordenamos y clasificamos por colores 

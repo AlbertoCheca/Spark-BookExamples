@@ -11,6 +11,11 @@ object dfWriter {
       .getOrCreate()
     spark.sparkContext.setLogLevel("ERROR")
 
+    val df3 = spark.read.format("csv")
+      .option("inferSchema", "true")
+      .option("header", "true")
+      .option("mode", "PERMISSIVE")
+      .load(args(0))
 
   }
 }
