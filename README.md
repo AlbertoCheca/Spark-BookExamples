@@ -30,3 +30,13 @@ por ello se utiliza "case class" para definir una clase con todos los tipos de c
 
 
 ####Chapter 4 :SparkSQL & Dataframes
+En este capitulo trabajamos con los dataframes y hacemos consultas de SparkSQL
+#####Preguntas
++ GlobalTempView vs TempView
+
+Las TempView son dependientes de la SparkSession en la que estamos, y cuando acabe se destruiran, mientras que las GlobalTempView estan activas mientras la apliacion esta activa
+
+####Chapter 5 :Spark SQL and DataFrames: Interacting with External Data Sources
+En este capitulo trabajamos con los dataframes y veremos como interactuan cono otras herramientas como Hive
+#####Preguntas
++ Pros y Cons utilizar UDFs
