@@ -39,4 +39,10 @@ Las TempView son dependientes de la SparkSession en la que estamos, y cuando aca
 ####Chapter 5 :Spark SQL and DataFrames: Interacting with External Data Sources
 En este capitulo trabajamos con los dataframes y veremos como interactuan cono otras herramientas como Hive
 #####Preguntas
-+ Pros y Cons utilizar UDFs
++ Pros y Cons utilizar UDFs 
+ 
+ +Permite encapsular código y reusarlo, lo que se traduce como menor tiempo de desarrollo 
+ 
+ +Es posible rastrear fácilmente e identificar el lugar en el que se aplican las reglas de negocio reusables
+ 
+ -Se almacenan en el proyecto, y hanroa que repetirlos si hacemos otro
