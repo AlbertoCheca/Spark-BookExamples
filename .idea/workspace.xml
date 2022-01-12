@@ -6,32 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="1d1badd9-95ae-435a-b42e-4b8a50da38f0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/chapter2/MnMcount$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/chapter2/MnMcount.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/chapter2/quijote$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/chapter2/quijote.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/chapter3/csvReader$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/chapter3/csvReader.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/chapter3/dfWriter$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/chapter3/dfWriter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/chapter4/Aeropuertos$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/chapter4/Aeropuertos.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/App$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/App.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/DataframeExample$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/DataframeExample.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/Dataframereader$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/Dataframereader.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/MnMcount$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/MnMcount.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/RDDexample$$typecreator1$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/RDDexample$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/RDDexample.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/samples/AppTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/samples/ExampleSpec.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/samples/ListSuite.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/samples/MySpecTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/samples/StackSuite.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +34,13 @@
       </set>
     </option>
   </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
   </component>
@@ -76,7 +57,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Example3" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -87,7 +68,7 @@
       <recent name="org.chapter2" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MnMcount (1)">
+  <component name="RunManager" selected="Application.MnMcount">
     <configuration name="Aeropuertos" type="Application" factoryName="Application" temporary="true">
       <option name="INCLUDE_PROVIDED_SCOPE" value="true" />
       <option name="MAIN_CLASS_NAME" value="org.chapter4.Aeropuertos" />
@@ -248,6 +229,9 @@
       <workItem from="1640606955176" duration="2779000" />
       <workItem from="1640682499849" duration="1377000" />
       <workItem from="1640769615996" duration="601000" />
+      <workItem from="1640862504549" duration="605000" />
+      <workItem from="1640864266279" duration="605000" />
+      <workItem from="1640866069749" duration="599000" />
     </task>
     <servers />
   </component>
@@ -255,13 +239,33 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="499" y="167" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1641211674933">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="167" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1536.824@0.0.1536.824" timestamp="1641211674933" />
     <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1640682670099">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1640682670099" />
-    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1640769627509">
+    <state width="1342" height="195" key="GridCell.Tab.0.bottom" timestamp="1640950306293">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1640769627509" />
+    <state width="1342" height="195" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1640950306293" />
+    <state width="1342" height="195" key="GridCell.Tab.0.center" timestamp="1640950306293">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1342" height="195" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1640950306293" />
+    <state width="1342" height="195" key="GridCell.Tab.0.left" timestamp="1640950306293">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1342" height="195" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1640950306293" />
+    <state width="1342" height="195" key="GridCell.Tab.0.right" timestamp="1640950306293">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1342" height="195" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1640950306293" />
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1641210867186">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1641210867186" />
   </component>
 </project>
