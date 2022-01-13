@@ -89,3 +89,12 @@ Impala ofrece una tecnología de base de datos escalable y paralela sobre Hadoop
 La velocidad de procesamiento de consultas en Hive es lenta, pero Impala es de 6 a 69 veces más rápida que Hive. En Hive, la latencia es alta, pero en Impala, la latencia es baja. Hive admite el almacenamiento de archivos RC y ORC, pero el almacenamiento de Impala es compatible con Hadoop y Apache HBase.
 
 ### 3.3)  Comando INVALIDATE METADATA, ¿en qué consiste?
+marca los metadatos de una tabla como stale. La proxima vez que impala realice una query, Impala recarga los metadatos asociados antes de realizar la query. es una operacion mas costosa que actualizar los metadatos mediante REFRESH, la cual es mas recomendable
+
+### 3.4) Hacer invalidate metadata en Impala de la base de datos datos_padron.
+
+### 3.5) Calcular el total de EspanolesHombres, espanolesMujeres, ExtranjerosHombres y ExtranjerosMujeres agrupado por DESC_DISTRITO y DESC_BARRIO.
+
+### 3.6)Llevar a cabo las consultas en Hive en las tablas padron_txt_2 y padron_parquet_2 
+
+### 3.7) Llevar a cabo la misma consulta sobre las mismas tablas en Impala. 
