@@ -103,7 +103,7 @@ SELECT SUM(espanoleshombres),SUM(espanolesmujeres),SUM(extranjeroshombres),SUM(e
 ### 3.6)Llevar a cabo las consultas en Hive en las tablas padron_txt_2 y padron_parquet_2 
 ### 3.7) Llevar a cabo la misma consulta sobre las mismas tablas en Impala. 
 ### 3.8) ¿Se percibe alguna diferencia de rendimiento entre Hive e Impala?
-Si , Impala es muchisimo mas rqapido que Hive
+Si , Impala es muchisimo mas rapido que Hive
 
 
 ## 4- Sobre tablas particionadas.
@@ -119,6 +119,12 @@ PARTITIONED BY(DESC_DISTRITO STRING, DESC_BARRIO STRING)
 STORED AS PARQUET;
 
 ### 4.2)Insertar datos (en cada partición) dinámicamente (con Hive) en la tabla recién creada a partir de un select de la tabla padron_parquet_2.
+
+FROM datos_padron.padron_parquet_2
+INSERT OVERWRITE TABLE datos_padron.padron_particionado
+PARTITION(DESC_DISTRITO, DESC_BARRIO)
+SELECT COD_DISTRITO, COD_DIST_BARRIO, COD_BARRIO, COD_DIST_SECCION, COD_SECCION, COD_EDAD_INT,
+EspanolesHombres,EspanolesMujeres, ExtranjerosHombres,ExtranjerosMujeres, DESC_DISTRITO, DESC_BARRIO;
 
 ### 4.3) Hacer invalidate metadata en Impala de la base de datos padron_particionado.
 
