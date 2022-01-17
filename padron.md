@@ -128,8 +128,35 @@ EspanolesHombres,EspanolesMujeres, ExtranjerosHombres,ExtranjerosMujeres, DESC_D
 
 ### 4.3) Hacer invalidate metadata en Impala de la base de datos padron_particionado.
 
+INVALIDATE METADATA padron_particionado;
+
 ### 4.4)Calcular el total de EspanolesHombres, EspanolesMujeres, ExtranjerosHombres y ExtranjerosMujeres agrupado por DESC_DISTRITO y DESC_BARRIO para los distritos CENTRO, LATINA, CHAMARTIN, TETUAN, VICALVARO y BARAJAS.
 
-### 4.5)Llevar a cabo la consulta en Hive en las tablas padron_parquet y padron_partitionado. ¿Alguna conclusión?
+select desc_distrito,desc_barrio,sum(espanoleshombres),
 
+    sum(espanolesmujeres),sum(extranjeroshombres),sum(extranjerosmujeres)
+
+    from padron_txt
+
+    where desc_distrito LIKE "CENTRO" or desc_barrio Like "LATINA" or desc_barrio like "CHAMARTIN" or desc_barrio like "TETUAN"
+
+    group by desc_distrito,desc_barrio;
+
+### 4.5)Llevar a cabo la consulta en Hive en las tablas padron_parquet y padron_partitionado.
 ### 4.6)Llevar a cabo la consulta en Impala en las tablas padron_parquet y padron_particionado. ¿Alguna conclusión?
+
+Impala va mucho mas rapido que hive
+
+
+## 5- Trabajando con tablas en HDFS
+
+### 5.1)Crear un documento de texto en el almacenamiento local que contenga una secuencia de números distribuidos en filas y separados por columnas, llámalo datos1 y que sea por ejemplo:
+1,2,3
+
+4,5,6
+
+7,8,9
+
+### 5.2) Crear un segundo documento (datos2) con otros números pero la misma estructura
+
+### 5.3)Crear un directorio en HDFS con un nombre a placer, por ejemplo, /test. Si estás en una máquina Cloudera tienes que asegurarte de que el servicio HDFS está activo ya que puede no iniciarse al encender la máquina (puedes hacerlo desde el Cloudera Manager). A su vez, en las máquinas Cloudera es posible (dependiendo de si usamos Hive desde consola o desde Hue) que no tengamos permisos para crear directorios en HDFS salvo en el directorio /user/cloudera.
