@@ -8,6 +8,7 @@ object PadronReader {
       .builder
       .appName("PadronReader")
       .config("spark.master", "local")
+      .enableHiveSupport()
       .getOrCreate()
     spark.sparkContext.setLogLevel("ERROR")
 
@@ -19,7 +20,7 @@ object PadronReader {
       .option("mode", "PERMISSIVE")
       .load(args(0))
 
-    df3.write
+/*    df3.write
       .format("csv")
       .mode("overwrite")
       .save("/tmp/data/csv/df_csv")
@@ -32,7 +33,8 @@ object PadronReader {
     df3.write
       .format("avro")
       .mode("overwrite")
-      .save("/tmp/data/avro/df_avro")
+      .save("/tmp/data/avro/df_avro")*/
+
 
   }
 }
