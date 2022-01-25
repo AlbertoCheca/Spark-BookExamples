@@ -213,12 +213,22 @@
       .option("delimiter",";")
       .load(args(0))
 
+    padronDF.na.fill(0).show(false)
+
 ### 6.2)De manera alternativa también se puede importar el csv con menos tratamiento en la importación y hacer todas las modificaciones para alcanzar el mismo estado de limpieza de los datos con funciones de Spark.
 
 ### 6.3)Enumera todos los barrios diferentes.
+    val BarriosDF = padronDF
+    .select("DESC_BARRIO").distinct()
 
+    println(s"Numero de barrios = ${BarriosDF.count()}")
+    BarriosDF.show()
 ### 6.4)Crea una vista temporal de nombre "padron" y a través de ella cuenta el número de barriosdiferentes que hay.
+    padronDF.createOrReplaceTempView("tempdf")
 
+    val sqlDF = spark.sql("SELECT * FROM tempdf")
+
+    println(s"Numero de barrios = ${sqlDF.count()}")
 ### 6.5)Crea una nueva columna que muestre la longitud de los campos de la columna DESC_DISTRITO y que se llame "longitud".
 ### 6.6)Crea una nueva columna que muestre el valor 5 para cada uno de los registros de la tabla. 
 
