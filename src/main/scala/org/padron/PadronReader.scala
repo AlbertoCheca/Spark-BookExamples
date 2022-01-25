@@ -1,6 +1,7 @@
 package org.padron
 
 import org.apache.spark.sql.SparkSession
+import org.apache.spark.sql.functions.{count, desc}
 
 object PadronReader {
   def main(args: Array[String]) {
@@ -8,17 +9,28 @@ object PadronReader {
       .builder
       .appName("PadronReader")
       .config("spark.master", "local")
-      .enableHiveSupport()
       .getOrCreate()
     spark.sparkContext.setLogLevel("ERROR")
 
 
-
-    val df3 = spark.read.format("csv")
+//cargamos el archivo que pasamos por argumentos
+    val padronDF = spark.read.format("csv")
       .option("inferSchema", "true")
       .option("header", "true")
       .option("mode", "PERMISSIVE")
+      .option("delimiter",";")
       .load(args(0))
+
+   // padronDF.na.fill(0)
+
+    padronDF.show(10)
+    //Total de lineas
+    println(s"Total Rows = ${padronDF.count()}")
+    //enmurar barrios diferentes
+   /* val BarriosDF = padronDF
+      .select("DESC_BARRIO").distinct()
+
+    BarriosDF.show()*/
 
 /*    df3.write
       .format("csv")
