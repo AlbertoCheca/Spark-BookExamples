@@ -206,6 +206,13 @@
 
 ### 6.1)Comenzamos realizando la misma práctica que hicimos en Hive en Spark, importando el csv. Sería recomendable intentarlo con opciones que quiten las "" de los campos, que ignoren los espacios innecesarios en los campos, que sustituyan los valores vacíos por 0 y que infiera el esquema.
 
+    val padronDF = spark.read.format("csv")
+      .option("inferSchema", "true")
+      .option("header", "true")
+      .option("mode", "PERMISSIVE")
+      .option("delimiter",";")
+      .load(args(0))
+
 ### 6.2)De manera alternativa también se puede importar el csv con menos tratamiento en la importación y hacer todas las modificaciones para alcanzar el mismo estado de limpieza de los datos con funciones de Spark.
 
 ### 6.3)Enumera todos los barrios diferentes.
