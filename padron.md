@@ -230,19 +230,27 @@
 
     println(s"Numero de barrios = ${sqlDF.count()}")
 ### 6.5)Crea una nueva columna que muestre la longitud de los campos de la columna DESC_DISTRITO y que se llame "longitud".
+    padronDF.withColumn("longitud",expr("length(DESC_DISTRITO)")).show(10)
 ### 6.6)Crea una nueva columna que muestre el valor 5 para cada uno de los registros de la tabla. 
+    val columnaDF = padronDF.withColumn("cinco",expr("5"))
 
+    columnaDF.show(10)
 ### 6.7)Borra esta columna.
+    val dropColDF = columnaDF.drop("cinco").show(10)
 
 ### 6.8)Particiona el DataFrame por las variables DESC_DISTRITO y DESC_BARRIO.
-
 ### 6.9)Almacénalo en caché. Consulta en el puerto 4040 (UI de Spark) de tu usuario local el estado de los rdds almacenados.
 
-### 6.10)Lanza una consulta contra el DF resultante en la que muestre el número total de "espanoleshombres", "espanolesmujeres", extranjeroshombres" y "extranjerosmujeres" para cada barrio de cada distrito. Las columnas distrito y barrio deben ser las primeras en aparecer en el show. Los resultados deben estar ordenados en orden de más a menos según la columna "extranjerosmujeres" y desempatarán por la columna "extranjeroshombres".
+    padronDF.write
+      .format("csv")
+      .mode("overwrite")
+      .partitionBy({"DESC_DISTRITO";"DESC_BARRIO"})
+      .save("/tmp/data/csv/df_csv")
 
-### 6.11)Elimina el registro en caché.
 
 ### 6.12)Crea un nuevo DataFrame a partir del original que muestre únicamente una columna con DESC_BARRIO, otra con DESC_DISTRITO y otra con el número total de "espanoleshombres" residentes en cada distrito de cada barrio. Únelo (con un join) con el DataFrame original a través de las columnas en común.
+    val descDF = padronDF.select("DESC_BARRIO","DESC_DISTRITO","EspanolesHombres")
+
 
 ### 6.13)Repite la función anterior utilizando funciones de ventana. (over(Window.partitionBy.....)).
 

@@ -2,6 +2,7 @@ package org.padron
 
 import org.apache.spark.sql.SparkSession
 import org.apache.spark.sql.functions.regexp_replace
+import org.apache.spark.sql.functions.expr
 import org.apache.spark.sql.functions.{count, desc, col}
 
 
@@ -26,11 +27,11 @@ object PadronReader {
       .option("delimiter",";")
       .load(args(0))
 
-    padronDF.na.fill(0).show(false)
+   // padronDF.na.fill(0).show(false)
 
 
     //Total de lineas
-
+    println(s"Total Rows = ${padronDF.count()}")
 //----------------------------------------------------------
   /*  //enmurar barrios diferentes
     val BarriosDF = padronDF
@@ -48,11 +49,48 @@ object PadronReader {
 
     println(s"Numero de barrios = ${sqlDF.count()}")*/
 //------------------------------------------------------------------------
-    //añadir columna nueva
+/*
+    //añadir columna nueva con longitud de DESC_DISTRITO
 
-    padronDF.withColumn("longitud",padronDF.col("DESC_DISTRITO"))
+    padronDF.withColumn("longitud",expr("length(DESC_DISTRITO)")).show(10)
 
-    padronDF.take(5)
-    println(s"Total Rows = ${padronDF.count()}")
+*/
+
+    //------------------------------------------------------------------------
+/*
+    //Columna nueva con 5s
+
+
+ val columnaDF = padronDF.withColumn("cinco",expr("5"))
+
+    columnaDF.show(10)
+    //------------------------------------------------------------------------
+   // Borrar la columna
+
+    val dropColDF = columnaDF.drop("cinco").show(10)*/
+
+    //-----------------------------------------------------------------------
+/*
+    //crear una particion y almacenarla
+
+
+    padronDF.write
+      .format("csv")
+      .mode("overwrite")
+      .partitionBy({"DESC_DISTRITO";"DESC_BARRIO"})
+      .save("/tmp/data/csv/df_csv")*/
+
+    //-----------------------------------------------------------------------
+    val descDF = padronDF.select("DESC_BARRIO","DESC_DISTRITO","EspanolesHombres")
+
+   descDF.show(10)
+/*
+
+    padronDF
+      .join(descDF, $"padronDF.DESC_BARRIO" === $"descDF.DESC_BARRIO")
+      .show(10)
+*/
+
+
   }
 }
