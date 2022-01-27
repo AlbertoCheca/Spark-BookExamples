@@ -4,6 +4,7 @@ import org.apache.spark.sql.SparkSession
 import org.apache.spark.sql.functions.regexp_replace
 import org.apache.spark.sql.functions.expr
 import org.apache.spark.sql.functions.{count, desc, col}
+import org.apache.spark.sql.expressions.Window
 
 
 object PadronReader {
@@ -81,15 +82,22 @@ object PadronReader {
       .save("/tmp/data/csv/df_csv")*/
 
     //-----------------------------------------------------------------------
-    val descDF = padronDF.select("DESC_BARRIO","DESC_DISTRITO","EspanolesHombres")
+/*    val descDF = padronDF.select("DESC_BARRIO","DESC_DISTRITO","EspanolesHombres")
 
    descDF.show(10)
-/*
 
-    padronDF
-      .join(descDF, $"padronDF.DESC_BARRIO" === $"descDF.DESC_BARRIO")
-      .show(10)
-*/
+
+    var innerJoinDF  = padronDF.join(descDF, padronDF(DESC_BARRIO) === descDF(DESC_BARRIO))*/
+
+    //-----------------------------------------------------------------------
+
+   // val windowSpec  = Window.partitionBy("DESC_BARRIO","DESC_DISTRITO")
+
+    val pivotDF = padronDF.groupBy("COD_EDAD_INT").pivot("DESC_BARRIO").sum("EspanolesMujeres").show()
+
+
+
+
 
 
   }
