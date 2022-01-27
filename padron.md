@@ -253,11 +253,25 @@
 
 
 ### 6.13)Repite la función anterior utilizando funciones de ventana. (over(Window.partitionBy.....)).
+    val windowSpec  = Window.partitionBy("DESC_BARRIO","DESC_DISTRITO")
 
 ### 6.14)Mediante una función Pivot muestra una tabla (que va a ser una tabla de contingencia) quecontenga los valores totales ()la suma de valores) de espanolesmujeres para cada distrito y en cada rango de edad (COD_EDAD_INT). Los distritos incluidos deben ser únicamente CENTRO, BARAJAS y RETIRO y deben figurar como columnas . El aspecto debe ser similar a este:
+    val pivotDF = padronDF.groupBy("COD_EDAD_INT").pivot("DESC_BARRIO").sum("EspanolesMujeres")
+    pivotDF.select("COD_EDAD_INT","BARAJAS","CENTRO","RETIRO").show(10)
 
 ### 6.15)Utilizando este nuevo DF, crea 3 columnas nuevas que hagan referencia a qué porcentaje de la suma de "espanolesmujeres" en los tres distritos para cada rango de edad representa cada uno de los tres distritos. Debe estar redondeada a 2 decimales. Puedes imponerte la condición extra de no apoyarte en ninguna columna auxiliar creada para el caso.
 
 ### 6.16)Guarda el archivo csv original particionado por distrito y por barrio (en ese orden) en un directorio local. Consulta el directorio para ver la estructura de los ficheros y comprueba que es la esperada.
 
+     padronDF.write
+      .format("csv")
+      .mode("overwrite")
+      .partitionBy({"DESC_DISTRITO";"DESC_BARRIO"})
+      .save("/tmp/data/csv/df_csv")
 ### 6.17)Haz el mismo guardado pero en formato parquet. Compara el peso del archivo con el resultado anterior.
+
+    padronDF.write
+      .format("avro")
+      .mode("overwrite")
+      .partitionBy({"DESC_DISTRITO";"DESC_BARRIO"})
+      .save("/tmp/data/csv/df_acro")*/
